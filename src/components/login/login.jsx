@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axiosClient from "../api/axios-client";
+import axiosClient from "../../api/axios-client";
 import "./login.scss";
 
 const CORRECT_USER = {
