@@ -1,0 +1,138 @@
+$pink: #E6367E;
+$blue: #004EA2;
+$dark-blue: #181949;
+$white: #fff;
+
+body {
+  background: linear-gradient(-45deg, $pink, $blue);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@import url("https://fonts.googleapis.com/earlyaccess/notosanssc.css");
+* {
+  font-family: "Noto Sans SC";
+  font-weight: 400;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: $dark-blue;
+}
+
+form {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-gap: 10px;
+  margin: 150px 500px 0;
+  padding: 20px;
+  background: #F4F4F4;
+  border-radius: 10px;
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.2);
+  p {
+    text-align: center;
+  }
+  h2 {
+    margin-bottom: 5px;
+    text-align: center;
+    text-shadow: 0 4px 16px $white;
+    font-weight: bold !important;
+    font-size: 48px;
+    font-weight: 100;
+    color: $dark-blue;
+  }
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+  fieldset {
+    margin: 0;
+    background-color: $white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: grid;
+        align-items: center;
+        margin: 10px;
+        color: $dark-blue;
+        a {
+          color: #02c;
+        }
+        em {
+          grid-column: span 2;
+          text-align: center;
+          padding: 5px;
+        }
+        label {
+          text-align: left;
+          padding-bottom: 2px;
+        }
+        input {
+          padding: 5px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          &:hover {
+            border: 1px solid $pink;
+          }
+        }
+      }
+    }
+  }
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background: $dark-blue;
+    color: $white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    &:hover {
+      cursor: pointer;
+      background: $pink;
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  form {
+    h2 {
+      font-size: 40px;
+    }
+    fieldset {
+      ul {
+        li {
+          grid-template-columns: 100px 1fr;
+          label {
+            padding-right: 10px;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  form {
+    margin: 150px 20px;
+  }
+}
