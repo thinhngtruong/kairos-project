@@ -1,9 +1,6 @@
-$pink: #E6367E;
-$blue: #004EA2;
-$dark-blue: #181949;
-$white: #fff;
+@import "src/styles/variables.scss";
 
-body {
+body.login {
   background: linear-gradient(-45deg, $pink, $blue);
   margin: 0;
   padding: 0;
@@ -13,15 +10,18 @@ body {
   overflow: hidden;
 }
 
-@import url("https://fonts.googleapis.com/earlyaccess/notosanssc.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
-  font-family: "Noto Sans SC";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 h1,
 h2,
 h3,
@@ -43,9 +43,11 @@ form {
   background: #F4F4F4;
   border-radius: 10px;
   box-shadow: 0 32px 64px rgba(0, 0, 0, 0.2);
+
   p {
     text-align: center;
   }
+
   h2 {
     margin-bottom: 5px;
     text-align: center;
@@ -55,10 +57,12 @@ form {
     font-weight: 100;
     color: $dark-blue;
   }
+
   .error-message {
     color: red;
     text-align: center;
   }
+
   fieldset {
     margin: 0;
     background-color: $white;
@@ -69,27 +73,33 @@ form {
     ul {
       margin: 0;
       padding: 0;
+
       li {
         display: grid;
         align-items: center;
         margin: 10px;
         color: $dark-blue;
+
         a {
           color: #02c;
         }
+
         em {
           grid-column: span 2;
           text-align: center;
           padding: 5px;
         }
+
         label {
           text-align: left;
           padding-bottom: 2px;
         }
+
         input {
           padding: 5px;
           border: 1px solid #ddd;
           border-radius: 5px;
+
           &:hover {
             border: 1px solid $pink;
           }
@@ -97,6 +107,7 @@ form {
       }
     }
   }
+
   button {
     margin-top: 15px;
     padding: 10px;
@@ -105,6 +116,7 @@ form {
     background: $dark-blue;
     color: $white;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
     &:hover {
       cursor: pointer;
       background: $pink;
@@ -117,10 +129,12 @@ form {
     h2 {
       font-size: 40px;
     }
+
     fieldset {
       ul {
         li {
           grid-template-columns: 100px 1fr;
+
           label {
             padding-right: 10px;
             padding-bottom: 0;

@@ -1,30 +1,35 @@
-import React, { useState } from "react";
-import axiosClient from "../../api/axios-client";
+import React, {useState, useEffect} from "react";
+import axiosClient from "../../../api/axios-client";
 import "./login.scss";
 
 const CORRECT_USER = {
-  username: "Mona_Kassulke14",
-  password: "EECsjlVnWIXfeuA",
+    username: "Mona_Kassulke14",
+    password: "EECsjlVnWIXfeuA",
 };
 
-const Login = () => {
-  const [user, setUser] = useState(() => {
-    try {
-      return JSON.parse(localStorage.getItem("user"));
-    } catch (err) {
-      console.error(err);
-      return null;
-    }
-  });
-  const [loginInformation, setLoginInformation] = useState({
-    username: "",
-    password: "",
-  });
+export const LoginPage = () => {
+    const [user, setUser] = useState(() => {
+        try {
+            return JSON.parse(localStorage.getItem("user"));
+        } catch (err) {
+            console.error(err);
+            return null;
+        }
+    });
 
-  const [errMessage, setErrMessage] = useState("");
+    useEffect(() => {
+        document.body.classList.add("login");
+    }, [])
 
-  const validateUser = () => {
-    if (!loginInformation) return false;
+    const [loginInformation, setLoginInformation] = useState({
+        username: "",
+        password: "",
+    });
+
+    const [errMessage, setErrMessage] = useState("");
+
+    const validateUser = () => {
+        if (!loginInformation) return false;
     if (!loginInformation.username) {
       setErrMessage("Please enter the username");
       return false;
@@ -121,5 +126,3 @@ const Login = () => {
     </form>
   );
 };
-
-export default Login;

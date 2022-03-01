@@ -1,0 +1,60 @@
+@import "src/styles/variables.scss";
+
+.header {
+  z-index: 9999;
+  position: relative;
+}
+
+.top-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 170px;
+  font-size: 14px;
+  height: 36px;
+  background-color: $dark-blue;
+  color: $light-blue;
+  width: 745px;
+  float: right;
+  clear: both;
+
+  .top-header-item {
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer
+    }
+  }
+}
+
+.bottom-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 170px;
+  font-size: 14px;
+  height: 36px;
+  background-color: transparent;
+  color: $white;
+  width: 100%;
+  box-sizing: border-box;
+
+  & img {
+    margin-left: 70px;
+    margin-right: 60px;
+  }
+
+  .home {
+    color: $dark-blue;
+  }
+
+  .bottom-header-item {
+    margin-top: 10px;
+
+    &:hover {
+      cursor: pointer
+    }
+  }
+}

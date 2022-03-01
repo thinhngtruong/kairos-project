@@ -1,0 +1,15 @@
+@import "src/styles/variables.scss";
+
+.notification {
+  background-color: $light-pink;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > b {
+    margin: 0 5px;
+    font-weight: bold;
+    color: $dark-blue;
+  }
+}
