@@ -1,2 +1,5 @@
 export * from './header/header'
 export * from './market-place/market-place'
+export * from './services/services'
+export * from './prices/prices'
+export * from './footer/footer'

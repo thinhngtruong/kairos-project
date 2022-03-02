@@ -1,0 +1,76 @@
+@import "src/styles/variables.scss";
+
+.services {
+  h1 {
+    font-family: "Noto Sans SC";
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    margin-top: 78px;
+  }
+
+  .service-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background-color: $light-grey;
+    padding: 85px;
+
+    img {
+      margin-left: 300px;
+    }
+
+    .service-detail {
+      width: 400px;
+      text-align: center;
+    }
+
+    &.left {
+      flex-direction: row;
+      background-color: $white;
+
+      img {
+        margin-left: 0;
+        margin-right: 300px;
+      }
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 44px;
+      color: $dark-blue;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .group-name {
+      color: $grey;
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 6px;
+    }
+
+    .group-btn-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .group-btn {
+      margin-top: 16px;
+      background-color: $dark-blue;
+      color: $white;
+      padding: 0 16px;
+      border-radius: 8px;
+      font-size: 16px;
+      height: 32px;
+      border-color: $dark-blue;
+      cursor: pointer;
+    }
+  }
+}

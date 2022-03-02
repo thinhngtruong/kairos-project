@@ -1,0 +1,31 @@
+@import "src/styles/variables.scss";
+
+.footer {
+  display: flex;
+  padding: 0 80px;
+  background-color: #f3f9ff;
+  border-top: 1px solid rgba(153, 153, 153, 0.46);
+
+  > div:not(:last-child) {
+    border-right: 2px solid rgba(153, 153, 153, 0.46);
+  }
+
+  .footer-item {
+    padding: 35px;
+  }
+
+  h3 {
+    color: $dark-blue;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 19px;
+    color: $grey;
+  }
+}
