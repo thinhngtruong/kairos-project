@@ -1,5 +1,5 @@
 ## Introducing the project
-This project implements UI for home page and login page, including 2 routes: / to view home page and /login to view login page. 
+This project implements UI for home page and login page, including 2 routes: "/" to view home page and "/login" to view login page. 
 
 
 ## Main technology used
