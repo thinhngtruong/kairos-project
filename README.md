@@ -1,28 +1,28 @@
-As a developer, I want to have Authentication page with the APIs on the Assumptions 
+## Introducing the project
+This project implements UI for home page and login page, including 2 routes: / to view home page and /login to view login page. 
+
+
+## Main technology used
+- ReactJS
+- SCSS
+- React-router-dom
+- Enzyme and jest for unit test
 
 ## Live demo
 
 Website: [https://kairos-reactjs.herokuapp.com/](https://kairos-reactjs.herokuapp.com/)
 
-## Folder structure
+## Previews
+![Preview 1](https://res.cloudinary.com/dcls8hwlu/image/upload/v1646242147/Screen_Shot_2022-03-03_at_00.19.20_mpbpml.png)
 
-```bash
-├── src
-│   ├── App.jsx
-│   ├── api
-│         └── axios-client
-│   ├── components
-│          └── login
-│                 └── login.jsx
-│                 └── login.scss
-│                 └── login.test.js
 
-```
+![Preview 2](https://res.cloudinary.com/dcls8hwlu/image/upload/v1646242146/Screen_Shot_2022-03-03_at_00.19.31_l3lqvi.png)
 
-## Main technology used
-- ReactJS
-- SCSS
-- Enzyme and jest for unit test
+
+![Preview 3](https://res.cloudinary.com/dcls8hwlu/image/upload/v1646242145/Screen_Shot_2022-03-03_at_00.19.39_pyfdhw.png)
+
+
+![Preview 4](https://res.cloudinary.com/dcls8hwlu/image/upload/v1646242145/Screen_Shot_2022-03-03_at_00.19.48_xi1wvb.png)
 
 ## How to install and run this project?
 
